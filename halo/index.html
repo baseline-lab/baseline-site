@@ -21,27 +21,28 @@
 
   <main>
     <div class="wrap">
-      <section class="hero">
-        <div class="product-card featured" style="border:none; background:transparent; padding:0">
-          <div class="pc-body">
-            <div class="eyebrow">Halo · iPhone</div>
-            <h1>See your gum health improve, week by week.</h1>
-            <p class="lead">
-              Take a quick photo of your gums and Halo highlights the visible signs of gum health —
-              redness, swelling, and bleeding — then tracks the trend over time alongside a simple daily
-              routine. Small habit, visible progress.
-            </p>
-            <div>
-              <a class="btn" href="#" aria-disabled="true">Coming soon to the App Store</a>
-            </div>
-          </div>
-          <div class="phone" aria-hidden="true">
-            <div class="screen">
-              <div class="ring"><span>84</span></div>
-              <div class="cap">Looking good</div>
-              <div class="sub">+6 since last week</div>
-            </div>
-          </div>
+      <section class="hero" style="text-align:center; padding-bottom:12px">
+        <div class="eyebrow">Halo · iPhone</div>
+        <h1 style="margin-left:auto; margin-right:auto">See your gum health improve, week by week.</h1>
+        <p class="lead" style="margin-left:auto; margin-right:auto">
+          Take a quick photo of your gums and Halo highlights the visible signs of gum health —
+          redness, swelling, and bleeding — then tracks the trend over time alongside a simple daily
+          routine. Small habit, visible progress.
+        </p>
+
+        <!-- App Store badge. Halo is in TestFlight, not publicly released yet, so this is
+             intentionally not linked. When the app goes live, replace this <span> with:
+             <a class="appstore-badge" href="https://apps.apple.com/app/id6757731255"> ... </a>
+             and change the small line to "DOWNLOAD ON THE". -->
+        <span class="appstore-badge soon" title="Halo is in beta — coming soon to the App Store">
+          <svg viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+          <span class="ab-txt"><small>COMING SOON ON THE</small><b>App&nbsp;Store</b></span>
+        </span>
+
+        <div class="screens">
+          <div class="shot"><img src="/halo/img/01-landing.png" width="214" height="465" loading="lazy" alt="Halo — your gums are trying to tell you something" /></div>
+          <div class="shot raise"><img src="/halo/img/02-onboarding.png" width="214" height="465" loading="lazy" alt="Halo — watch your gums get healthier, week by week" /></div>
+          <div class="shot"><img src="/halo/img/03-paywall.png" width="214" height="465" loading="lazy" alt="Halo Premium plans" /></div>
         </div>
       </section>
 

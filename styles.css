@@ -97,24 +97,24 @@ h3 { font-size: 18px; color: var(--ink); margin: 0 0 6px; }
   h1 { font-size: 34px; }
 }
 
-/* Phone mockup (CSS-only, asset-free) */
-.phone {
-  width: 188px; height: 300px; border-radius: 30px; flex: 0 0 auto;
-  background: linear-gradient(160deg, var(--accent), color-mix(in srgb, var(--accent) 60%, #08352c));
-  padding: 12px; box-shadow: 0 20px 40px rgba(20,30,28,0.18);
+/* Phone screenshots showcase */
+.screens { display: flex; gap: 18px; justify-content: center; align-items: flex-start; flex-wrap: wrap; margin-top: 36px; }
+.shot { width: 214px; border-radius: 30px; overflow: hidden; background: #fff; border: 1px solid var(--line); box-shadow: 0 18px 42px rgba(20,30,28,0.16); }
+.shot img { width: 100%; display: block; }
+.shot.raise { transform: translateY(-18px); }
+@media (max-width: 760px) { .shot { width: 168px; } .shot.raise { transform: none; } }
+
+/* App Store badge */
+.appstore-badge {
+  display: inline-flex; align-items: center; gap: 11px; background: #111418; color: #fff;
+  padding: 10px 18px; border-radius: 14px; margin-top: 22px; line-height: 1.1;
 }
-.phone .screen {
-  width: 100%; height: 100%; border-radius: 20px; background: #fff;
-  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px;
-}
-.phone .ring {
-  width: 96px; height: 96px; border-radius: 50%;
-  background: conic-gradient(var(--accent) 78%, var(--accent-soft) 0);
-  display: grid; place-items: center; margin-bottom: 4px;
-}
-.phone .ring span { width: 72px; height: 72px; border-radius: 50%; background: #fff; display: grid; place-items: center; font-weight: 800; font-size: 26px; color: var(--ink); }
-.phone .cap { font-weight: 800; color: var(--ink); font-size: 14px; }
-.phone .sub { color: var(--muted); font-size: 12px; }
+.appstore-badge:hover { text-decoration: none; opacity: 0.92; }
+.appstore-badge svg { width: 22px; height: 22px; flex: 0 0 auto; }
+.appstore-badge .ab-txt { display: flex; flex-direction: column; }
+.appstore-badge .ab-txt small { font-size: 10px; opacity: 0.82; letter-spacing: 0.3px; }
+.appstore-badge .ab-txt b { font-size: 17px; font-weight: 700; letter-spacing: -0.2px; }
+.appstore-badge.soon { opacity: 0.5; pointer-events: none; }
 
 /* Values band */
 .values { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 22px; }
