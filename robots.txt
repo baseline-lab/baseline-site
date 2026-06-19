@@ -1,0 +1,13 @@
+# Keep this site out of search engines and discourage archiving.
+# App Store review and Google OAuth verification fetch these URLs directly
+# and are unaffected by this file.
+
+User-agent: *
+Disallow: /
+
+# Internet Archive / Wayback Machine crawler
+User-agent: ia_archiver
+Disallow: /
+
+User-agent: archive.org_bot
+Disallow: /
